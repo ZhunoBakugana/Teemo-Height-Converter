@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Teemo Height Converter</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header></header> 
+        
+        <h1>Teemo Converter</h1>
+        <div class="converter teemo_converter">
+            <form id="height_conversion_from">
+                <input type="text" name="height_converter">
+                <button type="button" id="height_converter_btn">Convert
+                    Height</button>
+                <br>
+                <input type="radio" id="m" name="height_parameter"
+                    value="m">
+                <label for="m">m</label><br>
+                <input type="radio" id="ft" name="height_parameter"
+                    value="ft">
+                <label for="ft">ft</label>
+                <p id="warming_handler"></p>
+                <div><!--I could've made this div the teemo container but I thought seperating them would be better-->
+                    <img src="images/teemo.png" id="teemo_example">
+                    <p>One Teemo is 0.81m(or 2.8 ft)</p>
+                </div>
+            </form>
+
+            <div id="teemo_container"></div>
+        </div>
+
+        <footer>
+            <p>Zhulien Mobin</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

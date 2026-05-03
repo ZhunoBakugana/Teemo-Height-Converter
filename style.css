@@ -1,0 +1,23 @@
+.teemo_converter{/*so I can display the Teemo's to the right*/
+    display: flex;
+    flex-direction: row;
+}
+
+#teemo_example, #teemo_container img{ /*adjust the size of all teemo's*/
+    height: auto;
+    width: 150px;
+}
+
+#teemo_container{/*we want the teemo's stacked on top of each other*/
+    display: flex;
+    flex-direction: column;
+}
+
+#teemo_container img{
+    margin-top: -29px; /*makes the result teemo's overlap*/
+    
+}
+
+#teemo_container img:first-child {/*makes sure the first teemo doesnt overlap with any content above and stays at the proper size*/
+  margin-top: 0;
+}
